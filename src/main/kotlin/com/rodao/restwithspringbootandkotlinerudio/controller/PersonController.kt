@@ -1,6 +1,6 @@
 package com.rodao.restwithspringbootandkotlinerudio.controller
 
-import com.rodao.restwithspringbootandkotlinerudio.model.Person
+import com.rodao.restwithspringbootandkotlinerudio.entity.Person
 import com.rodao.restwithspringbootandkotlinerudio.services.PersonService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType

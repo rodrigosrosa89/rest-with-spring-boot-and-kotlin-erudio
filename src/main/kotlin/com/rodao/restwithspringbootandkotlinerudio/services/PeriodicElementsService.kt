@@ -1,6 +1,6 @@
 package com.rodao.restwithspringbootandkotlinerudio.services
 
-import com.rodao.restwithspringbootandkotlinerudio.model.PeriodicElements
+import com.rodao.restwithspringbootandkotlinerudio.entity.PeriodicElements
 import com.rodao.restwithspringbootandkotlinerudio.repository.PeriodicElementsRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service

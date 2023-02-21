@@ -1,7 +1,7 @@
 package com.rodao.restwithspringbootandkotlinerudio.services
 
 import com.rodao.restwithspringbootandkotlinerudio.exceptions.ResourceNotFoundException
-import com.rodao.restwithspringbootandkotlinerudio.model.Person
+import com.rodao.restwithspringbootandkotlinerudio.entity.Person
 import com.rodao.restwithspringbootandkotlinerudio.repository.PersonRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service

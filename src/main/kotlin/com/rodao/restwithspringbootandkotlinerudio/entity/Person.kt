@@ -1,4 +1,4 @@
-package com.rodao.restwithspringbootandkotlinerudio.model
+package com.rodao.restwithspringbootandkotlinerudio.entity
 
 import jakarta.persistence.*
 

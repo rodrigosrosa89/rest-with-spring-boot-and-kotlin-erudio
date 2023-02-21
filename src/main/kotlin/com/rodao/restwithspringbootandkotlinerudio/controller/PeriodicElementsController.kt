@@ -1,6 +1,6 @@
 package com.rodao.restwithspringbootandkotlinerudio.controller
 
-import com.rodao.restwithspringbootandkotlinerudio.model.PeriodicElements
+import com.rodao.restwithspringbootandkotlinerudio.entity.PeriodicElements
 import com.rodao.restwithspringbootandkotlinerudio.services.PeriodicElementsService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.*
