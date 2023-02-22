@@ -3,6 +3,7 @@ package com.rodao.restwithspringbootandkotlinerudio.services
 import com.rodao.restwithspringbootandkotlinerudio.entity.Person
 import com.rodao.restwithspringbootandkotlinerudio.exceptions.ResourceNotFoundException
 import com.rodao.restwithspringbootandkotlinerudio.mapper.DozerMapper
+import com.rodao.restwithspringbootandkotlinerudio.mapper.ModelProjectMapper
 import com.rodao.restwithspringbootandkotlinerudio.model.vo.PersonVO
 import com.rodao.restwithspringbootandkotlinerudio.repository.PersonRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -30,7 +31,7 @@ class PersonService {
         val personEntity = repository.findById(id).orElseThrow {
             ResourceNotFoundException("No records found for this ID!")
         }
-        return DozerMapper.parseObject(personEntity, PersonVO::class.java)
+        return ModelProjectMapper.parseObject(personEntity, PersonVO::class.java)
     }
 
     fun create(personVO: PersonVO): PersonVO {
@@ -50,7 +51,7 @@ class PersonService {
         entity.lastName = personVO.lastName
         entity.address = personVO.address
         entity.gender = personVO.gender
-        return DozerMapper.parseObject(repository.save(entity), PersonVO::class.java)
+        return ModelProjectMapper.parseObject(repository.save(entity), PersonVO::class.java)
 
 
     }
