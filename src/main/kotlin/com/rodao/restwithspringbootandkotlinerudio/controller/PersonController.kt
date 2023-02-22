@@ -1,6 +1,6 @@
 package com.rodao.restwithspringbootandkotlinerudio.controller
 
-import com.rodao.restwithspringbootandkotlinerudio.entity.Person
+import com.rodao.restwithspringbootandkotlinerudio.model.vo.PersonVO
 import com.rodao.restwithspringbootandkotlinerudio.services.PersonService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.MediaType
@@ -17,7 +17,7 @@ class PersonController {
     @GetMapping(
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
-    fun findAll(): List<Person> {
+    fun findAll(): List<PersonVO> {
         return service.findAll()
     }
 
@@ -25,7 +25,7 @@ class PersonController {
         value = ["/{id}"],
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
-    fun getById(@PathVariable(value = "id") id: Long): Person {
+    fun getById(@PathVariable(value = "id") id: Long): PersonVO {
         return service.findById(id)
     }
 
@@ -33,7 +33,7 @@ class PersonController {
         consumes = [MediaType.APPLICATION_JSON_VALUE],
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
-    fun create(@RequestBody person: Person): Person {
+    fun create(@RequestBody person: PersonVO): PersonVO {
         return service.create(person)
     }
 
@@ -42,7 +42,7 @@ class PersonController {
         consumes = [MediaType.APPLICATION_JSON_VALUE],
         produces = [MediaType.APPLICATION_JSON_VALUE]
     )
-    fun update(@PathVariable(value = "id") id: Long, @RequestBody person: Person): Person {
+    fun update(@PathVariable(value = "id") id: Long, @RequestBody person: PersonVO): PersonVO {
         return service.update(id, person)
     }
 
