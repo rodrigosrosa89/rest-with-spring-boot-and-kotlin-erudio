@@ -1,7 +1,7 @@
 package com.rodao.restwithspringbootandkotlinerudio.mapper.mocks
 
 import com.rodao.restwithspringbootandkotlinerudio.entity.Person
-import com.rodao.restwithspringbootandkotlinerudio.model.vo.PersonVO
+import com.rodao.restwithspringbootandkotlinerudio.model.vo.v1.PersonVO
 
 class MockPerson {
     fun mockEntity(): Person {

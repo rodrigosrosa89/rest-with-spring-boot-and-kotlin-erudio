@@ -1,4 +1,6 @@
-package com.rodao.restwithspringbootandkotlinerudio.model.vo
+package com.rodao.restwithspringbootandkotlinerudio.model.vo.v2
+
+import java.util.*
 
 data class PersonVO(
 
@@ -7,4 +9,5 @@ data class PersonVO(
     var lastName: String = "",
     var address: String = "",
     var gender: String = "",
+    var birthday: Date? = null
 )

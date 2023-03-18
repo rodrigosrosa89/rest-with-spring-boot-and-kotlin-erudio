@@ -2,7 +2,7 @@ package com.rodao.restwithspringbootandkotlinerudio.mapper
 
 import com.rodao.restwithspringbootandkotlinerudio.entity.Person
 import com.rodao.restwithspringbootandkotlinerudio.mapper.mocks.MockPerson
-import com.rodao.restwithspringbootandkotlinerudio.model.vo.PersonVO
+import com.rodao.restwithspringbootandkotlinerudio.model.vo.v1.PersonVO
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
